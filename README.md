@@ -1,1 +1,4 @@
 # MOLINA-FLORES-ANAEL-juegswgr1
+1. Codigo subido al Github
+2. Video link: https://epnecuador-my.sharepoint.com/:v:/g/personal/daniela_molina_epn_edu_ec/IQBvcbrwpUD0Sb-bHs4SUYjvAXHw_qAMb0gtRIW-90dyc0k?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=RcGRpi
+3. Actividad Realizada
