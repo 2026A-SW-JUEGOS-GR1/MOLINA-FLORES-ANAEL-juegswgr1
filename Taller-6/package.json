@@ -1,0 +1,31 @@
+{
+  "name": "tu-casa-virtual",
+  "version": "1.0.0",
+  "description": "Tour guiado 3D de una casa virtual usando Babylon.js y un personaje GLB",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "http-server -c-1 -p 8080",
+    "dev": "http-server -c-1 -p 8080 -o",
+    "install-deps": "npm install"
+  },
+  "keywords": [
+    "babylonjs",
+    "3d",
+    "game",
+    "glb",
+    "casa-virtual"
+  ],
+  "author": "Student",
+  "license": "MIT",
+  "dependencies": {
+    "babylonjs": "^6.33.1",
+    "babylonjs-loaders": "^6.33.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

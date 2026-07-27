@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 6</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            background: #2c2c2c;
+            overflow: hidden;
+        }
+
+        #renderCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            touch-action: none;
+            outline: none;
+        }
+
+        #gameUI {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 14px 18px;
+            border: 1px solid rgba(255, 211, 125, 0.45);
+            border-radius: 12px;
+            background: rgba(15, 9, 20, 0.72);
+            color: white;
+            font-size: 16px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        #instructions {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 14px;
+            border-radius: 10px;
+            background: rgba(15, 9, 20, 0.7);
+            color: white;
+            font-size: 14px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 100;
+            pointer-events: none;
+        }
+
+        #gameStatus {
+            color: #ffe6a0;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        #objetivoStatus {
+            margin-top: 8px;
+            color: #9cc8ff;
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Canvas para renderizado 3D -->
+    <canvas id="renderCanvas"></canvas>
+
+    <!-- UI del juego -->
+    <div id="gameUI">
+        <div id="gameStatus">🏠 Casa Virtual Nocturna</div>
+        <div id="interactionStatus">Explora la casa y encuentra los objetos especiales.</div>
+        <div id="objetivoStatus">Progreso: 0 de 3 objetos encontrados</div>
+    </div>
+
+    <!-- Instrucciones -->
+    <div id="instructions">
+        <div>🎮 Movimiento: W/S o ↑/↓ para avanzar y retroceder</div>
+        <div>↩ Dirección: A/D o ←/→ para girar</div>
+        <div>⚡ Acciones: ESPACIO para saltar · E para interactuar</div>
+        <div>🎯 Objetivo: explora el jardín, la sala, la cocina y el segundo piso</div>
+    </div>
+
+    <!-- Indicador de carga -->
+    <div id="loadingIndicator" class="loading">
+        🔄 Preparando la casa, las luces y el personaje...
+    </div>
+
+    <!-- Cargar Babylon.js desde CDN -->
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+    <!-- Cargar motor de física Cannon.js -->
+    <script src="https://cdn.babylonjs.com/cannon.js"></script>
+
+    <!-- Cargar el juego -->
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
